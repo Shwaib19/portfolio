@@ -1,0 +1,120 @@
+<html><head><title>Portfolio Créatif</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="profile-photo">
+          <img src="pp.png" alt="Votre photo de profil" width="100" height="100">
+        </div>
+        <h1>KABORE Moussa B. S.</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Design & Créativité</h2>
+        <p>Designer Graphique & Monteur 3D passionné</p>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="filter-buttons">
+        <button class="filter-button active" data-filter="all">Tout</button>
+        <button class="filter-button" data-filter="graphic">Design Graphique</button>
+        <button class="filter-button" data-filter="3d">Montage 3D</button>
+        <button class="filter-button" data-filter="video">Vidéo</button>
+      </div>
+
+      <section id="portfolio" class="portfolio-section">
+        <div class="portfolio-item" data-category="graphic">
+          <img src="img1.jpg" alt="Projet de design graphique - Affiche publicitaire élégante" width="300" height="250">
+          <div class="content">
+            <h3>Affiche Publicitaire</h3>
+            <p>Design élégant pour une campagne de luxe</p>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="3d">
+          <img src="model.jpg" alt="Projet 3D - Modélisation architecturale" width="300" height="250">
+          <div class="content">
+            <h3>Modélisation 3D</h3>
+            <p>Rendu architectural d'un bâtiment moderne</p>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="graphic">
+          <img src="ident.jpg" alt="Projet de design graphique - Identité visuelle minimaliste" width="300" height="250">
+          <div class="content">
+            <h3>Identité Visuelle</h3>
+            <p>Conception minimaliste pour une marque contemporaine</p>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="3d">
+          <img src="img3.png" alt="Projet 3D - Visualisation produit" width="300" height="250">
+          <div class="content">
+            <h3>Visualisation Produit</h3>
+            <p>Rendu 3D photoréaliste pour une gamme de produits</p>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="video">
+          <video width="300" height="250" autoplay loop muted>
+            <source src="anime3.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la balise vidéo.
+          </video>
+          <div class="content">
+            <h3>Animation 3D</h3>
+            <p>Court métrage d'animation en 3D</p>
+          </div>
+        </div>
+        <div class="portfolio-item" data-category="video">
+          <video width="300" height="250" autoplay loop muted>
+            <source src="anime2.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la balise vidéo.
+          </video>
+          <div class="content">
+            <h3>Animations publicitaires</h3>
+            <p>Donnez vie a vos produits</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 KABORE Moussa B.S. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.filter-button').on('click', function() {
+        var filterValue = $(this).attr('data-filter');
+        
+        $('.filter-button').removeClass('active');
+        $(this).addClass('active');
+
+        if (filterValue == 'all') {
+          $('.portfolio-item').show();
+        } else {
+          $('.portfolio-item').hide();
+          $('.portfolio-item[data-category="' + filterValue + '"]').show();
+        }
+      });
+    });
+  </script>
+</body>
+</html>

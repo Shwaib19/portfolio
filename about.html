@@ -1,0 +1,222 @@
+<html><head><title>À Propos - Portfolio Créatif</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary-color: #1a1a2e;
+    --secondary-color: #16213e;
+    --accent-color: #0f3460;
+    --text-color: #e94560;
+    --bg-color: #bfd4d8;
+    --white: #dee8e8;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  .header-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .profile-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--accent-color);
+  }
+  .profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  h1, h2, h3 {
+    font-weight: 600;
+  }
+  h1 {
+    margin: 0;
+    font-size: 2em;
+    letter-spacing: 1px;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  nav ul li {
+    margin-left: 20px;
+  }
+  nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+  }
+  nav ul li a:hover {
+    color: var(--text-color);
+  }
+  main {
+    margin-top: 200px;
+  }
+  .about-section {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  .about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .skills {
+    margin-top: 30px;
+  }
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  .skill-tag {
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+  }
+  .journey {
+    margin-top: 40px;
+  }
+  .journey-item {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+  .journey-item:hover {
+    transform: translateY(-5px);
+  }
+  .journey-item h4 {
+    margin-top: 0;
+    color: var(--text-color);
+  }
+  footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 60px;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="profile-photo">
+          <img src="pp.png" alt="Votre photo de profil" width="80" height="80">
+        </div>
+        <h1>Kabore Moussa B. S.</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="about-section">
+        <div class="about-content">
+          <div class="about-image">
+            <img src="pp.png" alt="Photo de profil en grand format" width="200" height="200">
+          </div>
+          <h2>À Propos de Moi</h2>
+          <p>Bonjour ! Je suis <strong>KABORE Moussa Bassirou Shwaïb</strong>, un créatif passionné spécialisé dans le design graphique et la création visuelle. Mon parcours créatif a évolué au fil des années, me permettant d'explorer diverses facettes du design et de l'art visuel.</p>
+          <p>Je suis constamment à la recherche de nouveaux défis et d'opportunités pour repousser les limites de ma créativité. Chaque projet est pour moi une nouvelle aventure, une chance d'apprendre et de grandir en tant qu'artiste et designer.</p>
+          
+          <div class="skills">
+            <h3>Mes Compétences</h3>
+            <div class="skill-list">
+              <span class="skill-tag">Montage Photo</span>
+              <span class="skill-tag">Design d'Affiches</span>
+              <span class="skill-tag">Design Graphique</span>
+              <span class="skill-tag">UX/UI Design</span>
+              <span class="skill-tag">Modélisation 3D</span>
+              <span class="skill-tag">Animation 3D</span>
+            </div>
+          </div>
+          
+          <div class="journey">
+            <h3>Mon Parcours Créatif</h3>
+            <div class="journey-item">
+              <h4>Les Débuts : Montage Photo</h4>
+              <p>J'ai commencé mon voyage créatif avec le montage photo. Cette période m'a permis de développer mon œil pour la composition et la manipulation d'images, posant les bases de ma future carrière en design.</p>
+            </div>
+            <div class="journey-item">
+              <h4>Évolution : Design d'Affiches</h4>
+              <p>Inspiré par mon expérience en montage photo, je me suis tourné vers le design d'affiches. Cette transition m'a permis d'explorer la typographie, la mise en page et la communication visuelle à grande échelle.</p>
+            </div>
+            <div class="journey-item">
+              <h4>Approfondissement : Design Graphique</h4>
+              <p>Fort de mes expériences précédentes, je me suis plongé dans le monde du design graphique. Cette période a marqué mon véritable lancement en tant que designer professionnel, travaillant sur une variété de projets pour divers clients.</p>
+            </div>
+            <div class="journey-item">
+              <h4>Nouvelle Dimension : Modélisation et Animation 3D</h4>
+              <p>Récemment, j'ai décidé d'élargir mes compétences en me formant à la modélisation et à l'animation 3D. Cette nouvelle compétence me permet d'ajouter une dimension supplémentaire à mes créations et d'explorer de nouveaux horizons créatifs.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 KABORE Moussa B.S.. Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+</html>
