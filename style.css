@@ -133,6 +133,7 @@ main {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
+  overflow-x: auto;
 }
 .filter-button {
   background-color: var(--secondary-color);
