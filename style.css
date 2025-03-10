@@ -168,3 +168,15 @@ footer {
     margin-top: 30px;
     flex-wrap: wrap;
   }
+
+@media (max-width: 768px) {
+            .filter-buttons {
+    display: flex
+;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    overflow-x: auto;
+    /* margin-inline: 10%; */
+}
+            }
+
